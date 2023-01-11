@@ -1,0 +1,82 @@
+.project {
+  min-height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7)
+    url("https://res.cloudinary.com/dkbbweo5x/image/upload/v1669434156/portfolio-assets/recents_s0ux67.jpg")
+    center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  padding: 3rem 5rem;
+
+  .p-title {
+    width: 100%;
+    min-height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5rem;
+
+    p {
+      font-size: 56px;
+      color: #fa1e4e;
+      font-weight: bold;
+
+      b {
+        color: white;
+      }
+    }
+   }
+.mySwiper{
+   min-height: 70vh;
+   width: 100%;
+   margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .project {
+    padding: 0.6rem;
+    margin-bottom: 4rem;
+
+    .p-title {
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 11rem;
+
+      p {
+        font-size: 2.5rem;
+        color: #fa1e4e;
+        font-weight: bold;
+
+        b {
+          color: white;
+        }
+      }
+    }
+}
+}
+@media only screen and (max-width: 675px) {
+  .project {
+    margin-bottom: 4rem;
+    padding: 1rem;
+    
+    .p-title {
+      justify-content: flex-start;
+      padding: 1rem;
+      height: 6rem;
+
+      p {
+        font-size: 2.3rem;
+        color: #fa1e4e;
+        font-weight: bold;
+
+        b {
+          color: white;
+        }
+      }
+    }
+  }  
+}
+

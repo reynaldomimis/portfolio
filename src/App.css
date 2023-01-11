@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 4rem;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+ul li a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.app {
+  background: url("./images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
