@@ -1,14 +1,7 @@
-import React, { useEffect, useRef } from "react";
-import MainScreens from "./screens/MainScreens/MainScreens";
-import ClientScreens from "../src/components/CClient/CClient";
-import ContactScreens from "./screens/ContactScreens/ContactScreens";
-import ProjectScreens from "./screens/ProjectScreens/ProjectScreens";
-import SpecializationScreens from "./screens/SpecializationScreens/SpecializationScreens";
-import TestimonialScreens from "./screens/TestimonialScreens/TestimonialScreens";
-import "./App.css";
-import Footer from "./components/CFooter/CFooter";
+import React, { useEffect } from "react";
+import { Main, Contact, Project, Specialization, Testimonial } from "./screens";
 import AOS from "aos";
-import ScrollTop from "./components/ScrollTop/ScrollTop";
+import { CScrollTop, CFooter, CClient } from "./components";
 
 const App = () => {
   useEffect(() => {
@@ -17,14 +10,14 @@ const App = () => {
 
   return (
     <div className="app">
-      <ScrollTop />
-      <MainScreens id="main" />
-      <SpecializationScreens id="specialization" />
-      <ProjectScreens id="project" />
-      <ClientScreens />
-      <TestimonialScreens id="testimonial" />
-      <ContactScreens id="contact" />
-      <Footer />
+      <CScrollTop />
+      <Main id="main" />
+      <Specialization id="specialization" />
+      <Project id="project" />
+      <CClient />
+      <Testimonial id="testimonial" />
+      <Contact id="contact" />
+      <CFooter />
     </div>
   );
 };

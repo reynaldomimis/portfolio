@@ -1,7 +1,7 @@
 import React from "react";
 import "./styled.scss";
 
-const CCard = ({ src, title, description, aos }) => {
+const Card = ({ src, title, description, aos }) => {
   return (
     <>
       <div className="ccard" data-aos={aos}>
@@ -13,4 +13,4 @@ const CCard = ({ src, title, description, aos }) => {
   );
 };
 
-export default CCard;
+export default Card;

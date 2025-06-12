@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./styled.scss";
 
 const ScrollTop = () => {
   const [showScroll, setShowScroll] = useState(false);

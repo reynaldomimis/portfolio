@@ -4,6 +4,8 @@ import App from "./App";
 import { ParallaxProvider } from "react-scroll-parallax";
 import "aos/dist/aos.css";
 import "swiper/css/bundle";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

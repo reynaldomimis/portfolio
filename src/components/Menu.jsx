@@ -1,10 +1,11 @@
 import React from "react";
 import "./styled.scss";
+
 import Tilt from "react-parallax-tilt";
 import { useParallax } from "react-scroll-parallax";
-import { logoIcon } from "../../utils/CIcons";
+import { logoIcon } from "../utils/Icons";
 
-const CMenu = () => {
+const Menu = () => {
   const parallaxs = useParallax({
     translateY: [-50, 70, "easeInOut"],
     scale: [0, 1, "easeOutBack"],
@@ -16,7 +17,7 @@ const CMenu = () => {
 
   return (
     <>
-      <Tilt tiltAngleXInitial="150" tiltAngleYInitial="100">
+      <Tilt tiltAngleXInitial="-10" tiltAngleYInitial="5">
         <div className="top" ref={parallaxs.ref}>
           <div className="middle">
             <div className="circle1 ic">
@@ -66,4 +67,4 @@ const CMenu = () => {
   );
 };
 
-export default CMenu;
+export default Menu;

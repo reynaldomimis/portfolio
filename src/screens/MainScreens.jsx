@@ -1,6 +1,6 @@
 import React from "react";
+import { CMenu } from "../components";
 import "./styled.scss";
-import CMenu from "../../components/CMenu/CMenu";
 
 const MainScreens = ({ id }) => {
   return (
@@ -15,23 +15,28 @@ const MainScreens = ({ id }) => {
         <div className="left">
           <div className="title-section">
             <span className="t1" data-aos="fade-up-right">
-              <b>Hello </b> there,
+              <b>Hi, </b> I am
             </span>
             <p className="t2" data-aos="fade-down-right">
-              I'm Reynaldo Mimis
+              Reynaldo C. Mimis
             </p>
           </div>
           <p className="des" data-aos="fade-down-left">
-            an aspiring Front-End Developer
+            Junior Web Developer and IT Support Specialist
           </p>
           <div className="btn-wrapper">
-            <a href="#contact">
+            <a href="https://github.com/reynaldomimis">
               <div
                 className="btn"
                 data-aos-anchor-placement="top-bottom"
                 data-aos="fade-up"
               >
-                <span>Hire me</span>
+                <span style={{ marginRight: "10px" }}>Github </span>
+                <img
+                  src="https://res.cloudinary.com/dkbbweo5x/image/upload/v1669961482/portfolio-assets/GitHub_agfcie.png"
+                  alt=""
+                  style={{ width: "30px", height: "30px" }}
+                />
               </div>
             </a>
           </div>

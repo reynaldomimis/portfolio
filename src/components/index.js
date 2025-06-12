@@ -1,0 +1,9 @@
+export { default as CCard } from "./Card";
+export { default as CClient } from "./Client";
+export { default as CFooter } from "./Footer";
+export { default as CInput } from "./Input";
+export { default as CMenu } from "./Menu";
+export { default as CProjectCard } from "./ProjectCard";
+export { default as CQuotes } from "./Quotes";
+export { default as CScrollTop } from "./ScrollTop";
+export { default as CServices } from "./Services";

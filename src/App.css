@@ -31,7 +31,7 @@ ul li a {
 }
 
 .app {
-  background: url("./images/bg.png");
+  background: url("./assets/bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
