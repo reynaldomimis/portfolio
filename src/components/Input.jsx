@@ -1,5 +1,4 @@
 import React from "react";
-import "./styled.scss";
 
 const Input = ({ onChange, fieldStyle, hint, name, value }) => {
   return (

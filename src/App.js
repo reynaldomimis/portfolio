@@ -1,7 +1,43 @@
+// import React, { useEffect } from "react";
+// import { Main, About, Specialization, Project } from "./screens";
+// import AOS from "aos";
+// import "./App.css";
+// import { CFooter } from "./components";
+// import Services from "./components/Services";
+// import Header from "./components/Header";
+
+// const App = () => {
+//   useEffect(() => {
+//     AOS.init();
+//   }, []);
+
+//   return (
+//     <div className="app">
+//       {/* <CScrollTop /> */}
+//       <Header />
+//       <Main id="main" />
+//       <About id="about" />
+//       <Specialization id="specialization" />
+//       <Project id="project" />
+//       <Services id="services" />
+//       <CFooter />
+//     </div>
+//   );
+// };
+
+// export default App;
+
 import React, { useEffect } from "react";
-import { Main, Contact, Project, Specialization, Testimonial } from "./screens";
+// import { Main, About, Specialization, Project } from "./screens";
 import AOS from "aos";
-import { CScrollTop, CFooter, CClient } from "./components";
+// import "./App.css";
+// import { CFooter } from "./components";
+// import Services from "./components/Services";
+import Header from "./components/Header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainScreens from "./screens/MainScreen";
+import { Main, About, Project, Specialization } from "./screens";
+// import { injector, books, movies, software } from "./data/data";
 
 const App = () => {
   useEffect(() => {
@@ -9,16 +45,23 @@ const App = () => {
   }, []);
 
   return (
-    <div className="app">
-      <CScrollTop />
-      <Main id="main" />
-      <Specialization id="specialization" />
-      <Project id="project" />
-      <CClient />
-      <Testimonial id="testimonial" />
-      <Contact id="contact" />
-      <CFooter />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/home" element={<Main />} />
+          <Route path="/projects" element={<Project />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/specialization" element={<Specialization />} />
+          {/* <Route path="/movies" element={<SwiperCard data={movies} />} />
+   
+          {/* Add more routes as needed */}
+        </Routes>
+        {/* <DiscoverSection />
+        <Footer /> */}
+      </div>
+    </Router>
   );
 };
 

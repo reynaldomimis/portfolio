@@ -1,13 +1,15 @@
 import React from "react";
 
-const Services = () => {
+const Services = ({ id }) => {
   return (
     <div
+      id={id}
       className="service container d-flex flex-row justify-content-around align-items-center rounded"
       style={{
         minHeight: "16rem",
         backgroundColor: "#1c1726",
         marginTop: "4rem",
+        marginBottom: "4rem",
         padding: "1rem 3rem",
         width: "80%",
       }}

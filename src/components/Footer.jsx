@@ -26,7 +26,7 @@ const Footer = () => {
       }}
     >
       <span className="text-white fw-semibold" style={{ fontSize: "24px" }}>
-        © Reynaldo C. Mimis 2022.
+        © Reynaldo C. Mimis
       </span>
 
       <div

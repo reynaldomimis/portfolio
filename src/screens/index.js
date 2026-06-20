@@ -1,5 +1,4 @@
-export { default as Contact } from "./ContactScreens";
-export { default as Main } from "./MainScreens";
-export { default as Project } from "./ProjectScreens";
-export { default as Specialization } from "./SpecializationScreens";
-export { default as Testimonial } from "./TestimonialScreens";
+export { default as About } from "./AboutScreen";
+export { default as Main } from "./MainScreen";
+export { default as Project } from "./ProjectScreen";
+export { default as Specialization } from "./SpecializationScreen";
